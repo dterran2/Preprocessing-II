@@ -1,3 +1,13 @@
+.btn {
+  font-size: 2rem;
+  text-align: center;
+  border: solid black;
+  border-width: 2px 4px;
+  border-radius: 20%;
+  padding: 2rem;
+  background-color: #06f5f5;
+  color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +178,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav a {
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +197,36 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.container-header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.container-header h1 {
+  width: 50%;
+  align-content: flex-end;
+}
+.welcome img {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 100%;
+  border-top: 0.2rem dashed darkgray;
+}
+.welcome .welcome-paragraph {
+  display: block;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 0.2rem dashed darkgray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
