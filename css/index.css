@@ -1,10 +1,16 @@
+.tablet-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
 .btn {
   font-size: 2rem;
   text-align: center;
   border: solid black;
   border-width: 2px 4px;
-  border-radius: 20%;
-  padding: 2rem;
+  border-radius: 30%;
+  padding: 1.5rem;
   background-color: #06f5f5;
   color: white;
 }
@@ -184,8 +190,16 @@ nav {
   justify-content: space-between;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+}
 nav a {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .footer {
   width: 100%;
@@ -205,9 +219,29 @@ nav a {
   display: flex;
   padding-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container-header h1 {
   width: 50%;
   align-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container-header h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .welcome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
 }
 .welcome img {
   max-width: 800px;
@@ -234,13 +268,37 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -261,6 +319,14 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -270,7 +336,22 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
 }
